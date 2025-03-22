@@ -1,0 +1,362 @@
+/* Custom CSS for BODSPHERE Website */
+
+:root {
+  --primary-color: #8E4162;  /* Rich purple-red */
+  --secondary-color: #4A1942; /* Deep purple */
+  --accent-color: #C490D1;   /* Light lavender */
+  --light-color: #FFF8F0;    /* Soft cream */
+  --dark-color: #2E1C2B;     /* Dark purple */
+  --highlight-color: #FF9000; /* Vibrant orange accent */
+  --whatsapp-color: #25D366; /* WhatsApp green */
+}
+
+/* Typography */
+body {
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #2D2D2D;
+}
+
+/* BODSPHERE Title */
+.bodsphere-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #FFFFFF, #C490D1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.bodsphere-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to right, var(--accent-color), var(--highlight-color));
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .bodsphere-title {
+    font-size: 3rem;
+  }
+}
+
+/* Logo */
+.logo-image {
+  height: 660px;
+  width: auto;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Hero Section */
+header {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--highlight-color), var(--primary-color));
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--whatsapp-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Responsive for big logo */
+@media (max-width: 1200px) {
+  .logo-image {
+    height: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    height: 340px;
+  }
+  
+  .benefit-item {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-image {
+    height: 280px;
+  }
+}
+
+/* Section Backgrounds */
+.bg-accent {
+  background: linear-gradient(135deg, var(--accent-color) 0%, rgba(196, 144, 209, 0.7) 100%);
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(to right, var(--secondary-color), var(--dark-color));
+}
+
+/* Service Cards */
+.service-card {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+.service-card .p-6 {
+  border-top: 4px solid var(--primary-color);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  margin: 0.35rem;
+  border-radius: 50px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Benefit Items */
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.2rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary-color);
+}
+
+.benefit-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item svg {
+  color: var(--highlight-color);
+  flex-shrink: 0;
+}
+
+/* Principle Cards */
+.principle-card {
+  background-color: var(--light-color);
+  padding: 1.8rem;
+  border-radius: 1rem;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.principle-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  z-index: -1;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.principle-card:hover {
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.principle-card:hover::before {
+  opacity: 1;
+}
+
+/* Form Input */
+.form-input {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(142, 65, 98, 0.2);
+  background-color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 1.2s ease-out;
+}
+
+/* Custom container to match with the site's overall style */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Section titles decoration */
+h2 {
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary-color), var(--highlight-color));
+  border-radius: 3px;
+} 
