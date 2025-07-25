@@ -5,50 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BODSPHERE - Crina M. Mihaies | Pilates, Yoga, Barré Art</title>
     <meta name="description" content="BODSPHERE by Crina M. Mihaies - Pilates, Yoga, Barré Art instructor specializat în fitness, recuperare medicală și terapie holistică.">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="varianta1.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="dark-theme.css" rel="stylesheet">
 </head>
-<body class="font-sans bg-gray-50 text-gray-800">
-    <!-- Hero Section -->
-    <header class="relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
-        <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
-        <div class="container mx-auto px-4 h-full flex flex-col justify-center items-center relative z-10 text-white text-center">
-            <img src="logo_alb.png" alt="BODSPHERE Logo" class="logo-image">
-            <div class="mt-10">
-                <a href="#despre" class="btn-primary">Descoperă Programele Noastre</a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="navbar-links">
+                <li><a href="#despre" class="nav-link">Despre</a></li>
+                <li><a href="#servicii" class="nav-link">Servicii</a></li>
+                <li><a href="#beneficii" class="nav-link">Beneficii</a></li>
+                <li><a href="#principii" class="nav-link">Principii</a></li>
+                <li><a href="#contact" class="nav-link highlight">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </header>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-logo-wrapper">
+                    <img src="logo_alb.png" alt="BODSPHERE Logo" class="hero-logo">
+                </div>
+                <h1 class="hero-title"><span class="gradient-text">Armonie</span> pentru corp și minte</h1>
+                <p class="hero-subtitle">Descoperă călătoria ta spre sănătate și echilibru prin Pilates, Yoga și Barré Art</p>
+                <div class="hero-buttons">
+                    <a href="#servicii" class="btn btn-primary">Explorează Serviciile</a>
+                    <a href="#contact" class="btn btn-outline">Contactează-mă</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow-scroll">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
-    <section id="despre" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-16 text-center">Despre Mine</h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-8 md:mb-0">
-                    <img src="hero1.jpg" alt="Pilates Practice" class="rounded-lg shadow-lg">
-                </div>
-                <div class="md:w-1/2 md:pl-12">
-                    <h2 class="text-3xl font-bold mb-6">Crina M. Mihaies</h2>
-                    <p class="mb-4 text-lg">Fondator BODSPHERE</p>
-                    <div class="mb-6">
-                        <p class="mb-4">De la varsta de 17 ani, din 2003, am locuit in Spania, unde am studiat atat in Zaragoza, Madrid, cat si in Londra UK, si mi-am format cariera profesionala si specializare in domeniul sanatati, bunastare si echilibru mental si corporal, bazat pe homeopatie si terapie complementara holistica.</p>
-                        <p class="mb-4">In urma unei leziuni destul de grave la coloana vertebrata lombara (in practicarea antrenamentelor de ballet, unde am fost nevoita sa renunt), fiind o persoana foarte activa, practic Pilates si Hatha-Yoga ca stil de viata din 2005, si iubind dansul urban, contemporan, interesul meu pentru echilibrul mental si corporal sa accentuat, in reabilitarea fizioterapeutica destul de lenta, si imposibilitatea de a mai face anumite elemente acrobatice, piruette.</p>
-                        <p class="mb-4">Pasiunea pentru gimnastica, dans urban, contemporan, mi-a deschis un nou orizont studind in profunzime coloana vertebrala si flexibilitatea mea, am continuat 3 ani clasele de dans Urban, Contemporan & Barré.</p>
-                        <p class="mb-4">Fascinata de cultura, valorile, fundamentele si traditia japoneza, ca si de mancarea lor, am invatat in calatoria mea in Tokyo si Osaka in 2010. Principiile fundamentale care au pus baza caracterului meu: onestitatea, dreptatea, compasiunea, eroismul, disciplina, curtoazia, sinceritatea, onoarea, datoria si loialitatea, ca si recunostinta!</p>
+    <section id="despre" class="section section-about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Despre Mine</span><br>
+                <h2 class="section-title">Crina M. Mihaies</h2><br>
+                <p class="section-subtitle">Fondator BODSPHERE</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-slideshow-container">
+                        <div class="about-slideshow-wrapper">
+                            <div class="about-slide fade">
+                                <img src="img/22.jpeg" alt="Crina M. Mihaies">
+                            </div>
+                            <div class="about-slide fade">
+                                <img src="img/12.jpeg" alt="Crina M. Mihaies">
+                            </div>
+                            <div class="about-slide fade">
+                                <img src="img/17.jpeg" alt="Crina M. Mihaies">
+                            </div>
+                            <div class="about-slide fade">
+                                <img src="img/20.jpeg" alt="Crina M. Mihaies">
+                            </div>
+                            <div class="about-slide fade">
+                                <img src="img/21.jpeg" alt="Crina M. Mihaies">
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex flex-wrap mb-6">
-                        <span class="badge">Trainer Fitness</span>
-                        <span class="badge">Pilates Barré Teacher</span>
-                        <span class="badge">Pilates Matwork Teacher</span>
-                        <span class="badge">Pilates Clinic Medical Recovery</span>
-                        <span class="badge">Pilates Prenatal & Postnatal</span>
-                        <span class="badge">Nutrition Terapist</span>
-                        <span class="badge">Yoga Teacher 500H RYT</span>
-                        <span class="badge">Ikigai Mindfulness</span>
-                        <span class="badge">Yumeiho Japanese Therapy</span>
-                        <span class="badge">Massage Therapist</span>
+                    <div class="experience-badge">
+                        <span class="experience-years">15+</span>
+                        <span class="experience-text">Ani de Experiență</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Din 2003 am locuit in Spania, Zaragoza si Madrid, unde am studiat si mi-am format cariera profesionala in domeniul sanatatii si sport, specializarea Chiropractor, Massage Therapist, medicina alternativa holistica si homeopata.</p>
+                        <p>Fiind o persoana foarte energica, din 2005 practic Hatha- Vinyasa Yoga, ca stil de viata, si multe alte activitati ca Ballet, Dans Contemporan si Urban, Padel Yoga Surf, in urma unei leziuni la coloana am fost nevoita sa renunt la ballet si anumite antrenamente intensive.</p>
+                        <p>Studiind in profunzime flexibilitatea mea si coloana vertebrala, in recuperarea medicala, am descoperit Barré- fuziunea care imbina dansul contemporan, ballet, pilates, exercitii de izometrie, yoga, fitness, a fost tot ce aveam nevoie, si m-am specializat in London Pilates Academy, UK in:</p>
+                        <ul style="list-style-type: none; padding-left: 15px;">
+                            <li>• Pilates Clinic- Medical Recovery</li>
+                            <li>• Pilates Barré</li>
+                            <li>• Pilates Matwork</li>
+                            <li>• Pilates Reformer</li>
+                            <li>• Pilates Pre & Post natal</li>
+                        </ul>
+                        <p>Fascinata de medicina holistica chineza si japoneza, remediile naturiste, cultura, valoriile si principiile japoneze, cat si de Chiropractica Japoneza Yumeiho, si Masajul Facial Kobido.<br>
+Am invatat in calatoria mea in 2010 in Tokio si Osaka, calmul mental si echilibrul corporal, alimentatia sanatoasa, disciplina si meditatia mindfulness!<br>
+Principiile Kaizen si Ikigai au pus bazele caracterului meu: Respectul, Disciplina, Recunostinta, Onestitatea, Dreptatea, Compasiunea, Sinceritatea, Loialitatea, Curtoazia, Resilienta, Rabdarea, Onoarea!</p>
+                    </div>
+                    <div class="certifications">
+                        <h3>Certificări & Specializări</h3>
+                        <div class="certification-badges">
+                            <span class="certification-badge">Chiropractor</span>
+                            <span class="certification-badge">Pilates-Barré Teacher</span>
+                            <span class="certification-badge">Hatha-Vinyasa Yoga</span>
+                            <span class="certification-badge">Pilates Clinic- Medical Recovery</span>
+                            <span class="certification-badge">Pilates Matwork</span>
+                            <span class="certification-badge">Pilates Reformer</span>
+                            <span class="certification-badge">Pilates Pre & Post natal</span>
+                            <span class="certification-badge">Massage Therapist</span>
+                            <span class="certification-badge">Yumeiho Therapist</span>
+                            <span class="certification-badge">Kobido Facial Massage</span>
+                            <span class="certification-badge">Ikigai Mindfulness Therapy</span>
+                            <span class="certification-badge">Fitness Trainer</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -56,36 +129,58 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-16 md:py-24 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-16 text-center">Servicii</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section id="servicii" class="section section-services">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Servicii</span><br>
+                <h2 class="section-title">Ce Ofer</h2><br>
+                <p class="section-subtitle">Specializări pentru îmbunătățirea sănătății și echilibrului</p>
+            </div>
+            
+            <div class="services-grid">
                 <div class="service-card">
-                    <div class="overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Pilates" class="rounded-t-lg">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-3">Pilates</h3>
-                        <p class="mb-3">Numele Pilates vine de la fondatorul sau Joseph Pilates, care si-a denumit metoda sa CONTROLOGY- referindu-se la conexiunea dintre minte si corp, si la controlul mental asupra miscarilor corporale.</p>
-                        <p>Pilates este forma fizica pentru a putea fi fericit si sanatos, un antrenament care dezvolta forta, flexibilitatea, coordonarea, viteza, agilitatea si anduranta.</p>
+                    <h3 class="service-title">Pilates</h3>
+                    <div class="service-content">
+                        <p>Numele Pilates vine de la fondatorul sau Joseph Pilates, care si-a denumit metoda sa CONTROLOGY- referindu-se la conexiunea dintre minte si corp, si la controlul mental asupra miscarilor corporale.<br>
+Pilates este forma fizica pentru a putea fi fericit si sanatos, un antrenament care dezvolta forta, flexibilitatea, coordonarea, viteza, agilitatea si anduranta.</p>
                     </div>
                 </div>
+                
                 <div class="service-card">
-                    <div class="overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Yoga" class="rounded-t-lg">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-3">Yoga</h3>
-                        <p>Yoga Teacher 500 H RYT Yoga Alliance certificat. Practica care te ajuta sa gasesti echilibrul intre corp si minte prin posturi, respiratie si meditatie. Este o disciplina care te invata sa respecti corpul tau, imbunatatind echilibrul, proprioceptia si respiratia.</p>
+                    <h3 class="service-title">Yoga</h3>
+                    <div class="service-content">
+                        <p>Yoga Teacher 500 H RYT Yoga Alliance certificat.<br>
+Practica care te ajuta sa gasesti echilibrul intre corp si minte prin posturi, respiratie si meditatie.</p>
+                        <p>Este o disciplina care te invata sa respecti corpul tau, imbunatatind echilibrul, proprioceptia si respiratia.</p>
                     </div>
                 </div>
+                
                 <div class="service-card">
-                    <div class="overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1520699049698-acd2fccb8cc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Barré Art" class="rounded-t-lg">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-3">Pilates Barré</h3>
-                        <p>Este fuziunea care va permit sa aveti efecte imediate de scluptarea, tonificarea si pierderea in greutate, aducand o stare de bine, de calm si o mai buna concentratie. Baza acestei metode sunt miscarile izometrice si controlate fara a va rani, combinate cu fitness, ballet si yoga, armonioase, care ajuta la tonifierea, marcarea și cresterea masei musculare in timp ce scadeti procentul de grasime, printre alte beneficii!</p>
+                    <h3 class="service-title">Pilates Barré</h3>
+                    <div class="service-content">
+                        <p>Este fuziunea care va permit sa aveti efecte imediate de scluptarea, tonificarea si pierderea in greutate, aducand o stare de bine, de calm si o mai buna concentratie.<br>
+Baza acestei metode sunt miscarile izometrice si controlate fara a va rani, combinate cu fitness, ballet si yoga, armonioase, care ajuta la tonifierea, marcarea și cresterea masei musculare in timp ce scadeti procentul de grasime, printre alte beneficii!</p>
                     </div>
                 </div>
             </div>
@@ -93,142 +188,252 @@
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-16 text-center">Beneficiile Pilates</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="benefit-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Antrenarea forței și rezistenței fizice</span>
+    <section id="beneficii" class="section section-benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Beneficii</span><br>
+                <h2 class="section-title">De ce să practici Pilates?</h2><br>
+                <p class="section-subtitle">Rezultate dovedite pentru corp și minte</p>
+            </div>
+            
+            <div class="benefits-container">
+                <div class="benefits-image">
+                    <div class="slideshow-container">
+                        <div class="slideshow-images">
+                            <img src="img/2.jpeg" alt="Pilates Practice" class="benefits-img slide">
+                            <img src="img/4.jpeg" alt="Pilates Practice" class="benefits-img slide">
+                            <img src="img/3.jpeg" alt="Pilates Practice" class="benefits-img slide">
+                            <img src="img/16.jpeg" alt="Pilates Practice" class="benefits-img slide">
+                        </div>
+                    </div>
                 </div>
-                <div class="benefit-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Îmbunătățirea posturii</span>
-                </div>
-                <div class="benefit-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Reducerea durerilor de spate</span>
-                </div>
-                <div class="benefit-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Prevenirea accidentelor fizice</span>
-                </div>
-                <div class="benefit-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Îmbunătățirea nivelului de energie</span>
-                </div>
-                <div class="benefit-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Reducerea stresului</span>
-                </div>
-                <div class="benefit-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Îmbunătățirea flexibilității și mobilității</span>
-                </div>
-                <div class="benefit-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Îmbunătățirea echilibrului</span>
-                </div>
-                <div class="benefit-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Îmbunătățirea somnului</span>
+                
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Antrenarea forței și rezistenței fizice</h3>
+                            <p>Dezvoltă mușchii profunzi și îmbunătățește tonusul întregului corp</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Îmbunătățirea posturii</h3>
+                            <p>Corectează aliniamentul corpului și previne dureri cauzate de postura incorectă</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Reducerea durerilor de spate</h3>
+                            <p>Ameliorează disconfortul și întărește mușchii suportivi ai coloanei vertebrale</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Flexibilitate și mobilitate</h3>
+                            <p>Crește amplitudinea de mișcare și flexibilitatea articulară</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Reducerea stresului</h3>
+                            <p>Tehnicile de respirație și concentrare reduc nivelul de stres și anxietate</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="mt-12 p-6 bg-gray-50 rounded-lg shadow-md">
-                <p class="mb-4">Persoanele cu dureri de spate, dureri articulare sau rigide, isi vor intari musculatura, isi vor imbunatati mobilitatea articulatiilor, iar musculatura este mult mai tonifiata si puternica.</p>
+            
+            <div class="benefits-note">
+                <p>Persoanele cu dureri de spate, dureri articulare sau rigide, isi vor intari musculatura.<br>
+Isi vor imbunatati mobilitatea articulatiilor, iar musculatura este mult mai tonifiata si puternica.</p>
             </div>
         </div>
     </section>
 
     <!-- Principles Section -->
-    <section class="py-16 md:py-24 bg-accent bg-opacity-10">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-16">Principiile Clasice Pilates</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <section id="principii" class="section section-principles">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Principii</span><br>
+                <h2 class="section-title">Principiile Clasice Pilates</h2><br>
+                <p class="section-subtitle">Fundamentele metodei Pilates</p>
+            </div>
+            
+            <div class="principles-grid">
                 <div class="principle-card">
-                    <h3 class="mb-2 font-bold">Respirația</h3>
+                    <div class="principle-number">01</div>
+                    <h3>Respirația</h3>
+                    <p>Controlul respirației pentru o oxigenare optimă și conectare cu mișcarea</p>
                 </div>
+                
                 <div class="principle-card">
-                    <h3 class="mb-2 font-bold">Concentrarea</h3>
+                    <div class="principle-number">02</div>
+                    <h3>Concentrarea</h3>
+                    <p>Atenție deplină asupra mișcărilor pentru rezultate maxime</p>
                 </div>
+                
                 <div class="principle-card">
-                    <h3 class="mb-2 font-bold">Controlul</h3>
+                    <div class="principle-number">03</div>
+                    <h3>Controlul</h3>
+                    <p>Stăpânirea fiecărei mișcări prin coordonare minte-corp</p>
                 </div>
+                
                 <div class="principle-card">
-                    <h3 class="mb-2 font-bold">Fluiditatea</h3>
+                    <div class="principle-number">04</div>
+                    <h3>Fluiditatea</h3>
+                    <p>Tranziție armonioasă între mișcări pentru eficiență energetică</p>
                 </div>
+                
                 <div class="principle-card">
-                    <h3 class="mb-2 font-bold">Mobilitatea</h3>
+                    <div class="principle-number">05</div>
+                    <h3>Centrarea</h3>
+                    <p>Activarea zonei centrale ("powerhouse") ca sursă de energie</p>
                 </div>
+                
                 <div class="principle-card">
-                    <h3 class="mb-2 font-bold">Precizia</h3>
+                    <div class="principle-number">06</div>
+                    <h3>Precizia</h3>
+                    <p>Atenție la detalii pentru o execuție corectă a exercițiilor</p>
                 </div>
+                
                 <div class="principle-card">
-                    <h3 class="mb-2 font-bold">Flexibilitatea</h3>
+                    <div class="principle-number">07</div>
+                    <h3>Mobilitatea</h3>
+                    <p>Îmbunătățirea mobilității articulare pentru mișcări libere</p>
                 </div>
+                
                 <div class="principle-card">
-                    <h3 class="mb-2 font-bold">Centrarea</h3>
+                    <div class="principle-number">08</div>
+                    <h3>Flexibilitatea</h3>
+                    <p>Dezvoltarea elasticității musculare pentru o amplitudine optimă</p>
                 </div>
             </div>
-            <p class="mt-10 text-lg font-light italic">Pilates este antrenamentul pentru toate vârstele, care îmbină armonia mentală și corporală pentru sănătatea ta!</p>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-16 md:py-24 bg-cover bg-center text-white relative" style="background-image: url('https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
-        <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
-        <div class="container mx-auto px-4 relative z-10 text-center">
-            <h2 class="text-3xl font-bold mb-6">Începe călătoria ta spre sănătate și echilibru</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Alătură-te comunității BODSPHERE și descoperă beneficiile practicii Pilates, Yoga și Barré Art.</p>
-            <a href="#contact" class="btn-primary">Contactează-ne</a>
+            
+            <div class="principles-quote">
+                <p>"Pilates este antrenamentul pentru toate vârstele, care îmbină armonia mentală și corporală pentru sănătatea ta!"</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-16 text-center">Contact</h2>
-            <div class="max-w-lg mx-auto">
-                <form class="space-y-6" action="mailto:sophiecut2019@gmail.com" method="post" enctype="text/plain">
-                    <div>
-                        <label for="name" class="block mb-2">Nume</label>
-                        <input type="text" id="name" name="name" class="form-input" required>
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span><br>
+                <h2 class="section-title">Începe Călătoria Ta</h2><br>
+                <p class="section-subtitle">Contactează-mă pentru informații și programări</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefon</h3>
+                            <p>+34 643 61 97 18</p>
+                        </div>
                     </div>
-                    <div>
-                        <label for="email" class="block mb-2">Email</label>
-                        <input type="email" id="email" name="email" class="form-input" required>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>sophiecut2019@gmail.com</p>
+                        </div>
                     </div>
-                    <div>
-                        <label for="phone" class="block mb-2">Telefon</label>
-                        <input type="tel" id="phone" name="phone" class="form-input">
-                    </div>
-                    <div>
-                        <label for="message" class="block mb-2">Mesaj</label>
-                        <textarea id="message" name="message" rows="4" class="form-input" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary w-full">Trimite Mesaj</button>
-                </form>
+                    
+                   
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" action="mailto:sophiecut2019@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Nume</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">Trimite Mesaj</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo_alb.png" alt="BODSPHERE Logo" class="footer-logo-img">
+                </div>
+                
+              
+                
+                <div class="footer-contact">
+                    <h3>Contact Rapid</h3>
+                    <p><strong>Email:</strong> sophiecut2019@gmail.com</p>
+                    <p><strong>Telefon:</strong> +34 643 61 97 18</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 BODSPHERE by Crina M. Mihaies. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/34643619718" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact pe WhatsApp">
@@ -237,18 +442,135 @@
         </svg>
     </a>
 
-    <!-- Footer -->
-    <footer class="bg-dark-gradient text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <img src="logo_alb.png" alt="BODSPHERE Logo" class="h-16">
-                </div>
-                <div class="text-center md:text-right">
-                    <p>&copy; 2024 BODSPHERE by Crina M. Mihaies. Toate drepturile rezervate.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbarLinks = document.querySelector('.navbar-links');
+            
+            menuToggle.addEventListener('click', function() {
+                navbarLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+            
+            // Close menu when clicking a link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navbarLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .slideshow-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .slideshow-images {
+            display: flex;
+            width: 400%;
+            animation: slideshow 16s infinite;
+        }
+        
+        .slide {
+            width: 25%;
+            flex-shrink: 0;
+        }
+        
+        @keyframes slideshow {
+            0%, 20% { transform: translateX(0); }
+            25%, 45% { transform: translateX(-25%); }
+            50%, 70% { transform: translateX(-50%); }
+            75%, 95% { transform: translateX(-75%); }
+            100% { transform: translateX(0); }
+        }
+
+        .about-slideshow-container {
+            position: relative;
+            overflow: hidden;
+            width: 65%;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            background-color: #111;
+            padding: 12px;
+        }
+        
+        .about-slideshow-wrapper {
+            position: relative;
+            height: 100%;
+        }
+        
+        .about-slide {
+            display: none;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            background-color: #0a0a0a;
+            padding: 6px;
+        }
+        
+        .about-slide img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px;
+        }
+        
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 2.5s;
+        }
+        
+        @keyframes fade {
+            0% {opacity: 0}
+            20% {opacity: 1}
+            80% {opacity: 1}
+            100% {opacity: 0}
+        }
+        
+        /* JavaScript to control slideshow */
+        .about-slide:first-child {
+            display: block;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let slideIndex = 0;
+            const slides = document.querySelectorAll('.about-slide');
+            
+            function showSlides() {
+                // Hide all slides
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                
+                // Move to next slide
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                
+                // Show current slide
+                slides[slideIndex-1].style.display = "block";
+                
+                // Change slide every 7 seconds
+                setTimeout(showSlides, 7000);
+            }
+            
+            // Start slideshow
+            showSlides();
+        });
+    </script>
 </body>
 </html> 
